@@ -1,13 +1,7 @@
-const http = require('http');
+import express from "express"
 
-// Create an HTTP server
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello, World!');
-});
+const server= express();
 
-// Listen on port 3000
-server.listen(3000, () => {
-  console.log('Server running on http://localhost:3000/');
+server.listen(5000, ()=>{
+  console.log("Server is working");
 });
